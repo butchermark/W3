@@ -8,8 +8,18 @@
     <title>W3</title>
   </head>
   <body>
-    <div>
-      <p id="datas">heble</p>
+    <div id="instruction"><p>Click the titles to sort</p></div>
+    <div id="loading-div"><p id="loading-text">Loading...</p></div>
+    <div id="main-container">
+      <table id="table">
+        <tr class="titles">
+          <th></th>
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortTable(1)">Location</th>
+          <th onclick="sortTable(2)">Email</th>
+          <th onclick="sortTable(3)">Phone Number</th>
+        </tr>
+      </table>
     </div>
   </body>
   <script src="/js/main.js"></script>

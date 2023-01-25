@@ -1,0 +1,78 @@
+@media (min-width: 100px) {
+  * {
+    font-size: map-get($font-sizes, reduced-3);
+  }
+  .data-element {
+    height: 30px;
+  }
+  #table tr th {
+    font-size: map-get($font-sizes, reduced-2);
+  }
+}
+
+@media (min-width: 600px) {
+  * {
+    font-size: 8px;
+  }
+  .data-element {
+    height: 30px;
+  }
+  #table tr th {
+    font-size: map-get($font-sizes, reduced-2);
+  }
+}
+@media (min-width: 630px) {
+  * {
+    font-size: 10px;
+  }
+  .data-element {
+    height: 40px;
+  }
+  #table tr th {
+    font-size: 14px;
+  }
+}
+@media (min-width: 900px) {
+  * {
+    font-size: map-get($font-sizes, reduced-2);
+  }
+  .data-element {
+    height: 40px;
+  }
+  #table tr th {
+    font-size: 16px;
+  }
+}
+@media (min-width: 950px) {
+  * {
+    font-size: 14px;
+  }
+  .data-element {
+    height: 40px;
+  }
+  #table tr th {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1115px) {
+  * {
+    font-size: map-get($font-sizes, reduced-1);
+  }
+  .data-element {
+    height: 40px;
+  }
+  #table tr th {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1189px) {
+  * {
+    font-size: map-get($font-sizes, reduced-1);
+  }
+  .data-element {
+    height: 60px;
+  }
+  #table tr th {
+    font-size: 22px;
+  }
+}
