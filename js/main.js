@@ -16,7 +16,7 @@ const dataMapping = async () => {
     .map((object) => {
       const { image, name, state, email, phonenumber } = object;
       return `<tr id=table-elements>
-      <td class=data-element" id="data-img"><img src="${image}" id="image"></img></td>
+      <td class=data-element id="data-img"><img src="${image}" id="image"></img></td>
     <td class="data-element" id="data-name">${name}</td>
     <td class="data-element" id="data-state">${state}</td>
     <td class="data-element" id="data-email">${email}</td>

@@ -1,78 +1,92 @@
+$font-sizes: (
+  "normal": 22px,
+  "reduced-1": 20px,
+  "reduced-2": 18px,
+  "reduced-3": 12px,
+  "reduced-4": 8px,
+);
+$data-element-heights: (
+  "normal": 60px,
+  "reduced-1": 40px,
+  "reduced-2": 20px,
+);
+$data-element-widths: (
+  "normal": 90%,
+  "reduced-1": 95%,
+  "reduced-2": 95%,
+);
+$image-sizes: (
+  "normal": 100%,
+  "reduced-1": 80%,
+  "reduced-2": 60%,
+  "reduced-3": 40%,
+  "reduced-4": 30%,
+);
+
 @media (min-width: 100px) {
   * {
-    font-size: map-get($font-sizes, reduced-3);
+    font-size: map-get($font-sizes, reduced-4);
   }
-  .data-element {
-    height: 30px;
+  #table-elements {
+    height: map-get($data-element-heights, reduced-2);
+    width: map-get($data-element-widths, reduced-2);
   }
-  #table tr th {
-    font-size: map-get($font-sizes, reduced-2);
+  #image {
+    height: 10px;
+    width: 10px;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 450px) {
   * {
-    font-size: 8px;
+    font-size: map-get($font-sizes, reduced-4);
   }
-  .data-element {
-    height: 30px;
+  #table-elements {
+    height: map-get($data-element-heights, reduced-2);
+    width: map-get($data-element-widths, reduced-2);
   }
-  #table tr th {
+  #image {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media (min-width: 635px) {
+  * {
+    font-size: map-get($font-sizes, reduced-3);
+  }
+  #table-elements {
+    height: map-get($data-element-heights, reduced-2);
+    width: map-get($data-element-widths, reduced-2);
+  }
+  #image {
+    height: 70%;
+    width: 70%;
+  }
+}
+@media (min-width: 750px) {
+  * {
+    font-size: map-get($font-sizes, reduced-3);
+  }
+  #table-elements {
+    height: map-get($data-element-heights, reduced-2);
+    width: map-get($data-element-widths, reduced-2);
+  }
+  #image {
+    height: 80%;
+    width: 80%;
+  }
+}
+@media (min-width: 915px) {
+  * {
     font-size: map-get($font-sizes, reduced-2);
   }
-}
-@media (min-width: 630px) {
-  * {
-    font-size: 10px;
+  #table-elements {
+    height: map-get($data-element-heights, normal);
+    width: map-get($data-element-widths, normal);
   }
-  .data-element {
-    height: 40px;
-  }
-  #table tr th {
-    font-size: 14px;
-  }
-}
-@media (min-width: 900px) {
-  * {
-    font-size: map-get($font-sizes, reduced-2);
-  }
-  .data-element {
-    height: 40px;
-  }
-  #table tr th {
-    font-size: 16px;
-  }
-}
-@media (min-width: 950px) {
-  * {
-    font-size: 14px;
-  }
-  .data-element {
-    height: 40px;
-  }
-  #table tr th {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1115px) {
-  * {
-    font-size: map-get($font-sizes, reduced-1);
-  }
-  .data-element {
-    height: 40px;
-  }
-  #table tr th {
-    font-size: 20px;
-  }
-}
-@media (min-width: 1189px) {
-  * {
-    font-size: map-get($font-sizes, reduced-1);
-  }
-  .data-element {
-    height: 60px;
-  }
-  #table tr th {
-    font-size: 22px;
+  #image {
+    height: 50px;
+    width: 50px;
   }
 }

@@ -1,67 +1,60 @@
-@import "/scss/medias";
+@import "./medias";
 
-:root {
-  $font-sizes: (
-    "simple": 18px,
-    "reduced-1": 16px,
-    "reduced-2": 12px,
-    "reduced-3": 8px,
-  );
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
 }
+
 * {
   font-family: Verdana, Tahoma, sans-serif;
-  font-size: map-get($font-sizes, simple);
-}
-body {
-  #instruction {
-    display: flex;
-    justify-content: center;
-    p {
+
+  body {
+    #instruction {
+      @include flexCenter();
+      p {
+        text-align: center;
+      }
+    }
+
+    #loading-div {
+      @include flexCenter();
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
       text-align: center;
+      align-items: center;
+      background-color: transparent;
     }
-  }
 
-  #loading-div {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-  }
-
-  #main-container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 75%;
-    border: 5px solid black;
-    padding: 0px;
-    table {
-      border-collapse: collapse;
+    #main-container {
       display: flex;
-      width: 100%;
-      tr th {
-        text-align: left;
-        background-color: rgb(149, 149, 149);
-      }
-      tr:nth-child(even) {
-        background-color: #eaeaea;
+      flex-direction: column;
+      margin: auto;
+      width: 75%;
+      border: 5px solid black;
+      padding: 0px;
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        #data-img {
+          @include flexCenter();
+          align-items: center;
+          #image {
+            @include flexCenter();
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 50%;
+          }
+        }
+        tr th {
+          text-align: left;
+          background-color: rgb(149, 149, 149);
+          cursor: pointer;
+        }
+        tr:nth-child(even) {
+          background-color: #eaeaea;
+        }
       }
     }
-  }
-
-  #data-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  #image {
-    border-radius: 50%;
-    border: 1px black solid;
-    height: 40px;
-    width: 40px;
   }
 }
